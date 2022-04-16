@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/Styles.css" rel="stylesheet" />
+    <script src="formSubmit.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Lecture 7 Lab: Web Form</h1>
+    </header>
+    <section>
+      <p>Feild with * are required</p>
+
+      <form id="quizz" action="https://formspree.io/f/xeqnzaeg" method="post">
+        <fieldset id="personalInfo">
+          <legend>Your Personal Information</legend>
+
+          <div class="Rform">
+            <label for="fullname">Full Name*</label>
+            <input
+              name="fullName"
+              id="fulname"
+              type="text"
+              placeholder="first and last name"
+              required
+            />
+          </div>
+          <div class="Rform">
+            <label for="mail">E-mail*</label>
+            <input
+              name="mail"
+              id="mail"
+              type="email"
+              placeholder="someone@somewhere.com"
+              required
+            />
+          </div>
+          <div class="Rform">
+            <label for="currentStudy">Current Study</label>
+            <input name="curStudy" id="study" type="text" />
+          </div>
+          <div class="Rform">
+            <label for="Age">Age</label>
+            <input name="Age" id="age" type="number" value="20" />
+          </div>
+        </fieldset>
+        <fieldset id="quest">
+          <legend>Your Quiz</legend>
+
+          <div class="Rform1">
+            <label for="info"
+              >1.What is the result of the following equation?</label
+            >
+            <br />
+
+            <label for="math"
+              >2<sup>2</sup>x5=
+              <input name="answer" id="answer" placeholder="" size="5" />
+            </label>
+          </div>
+
+          <div class="Rform1">
+            <label for="info"
+              >2. What does the acronym W3C stands for?
+              <select name="answerType" id="answer">
+                <option value="answer1" selected>
+                  3rd World War Coalition
+                </option>
+                <option value="answer2">World Wide Web Consortium</option>
+                <option value="answer3">World Wide WarCraft</option>
+                <option value="answer4">World's Third Consortium</option>
+              </select>
+            </label>
+          </div>
+          <div class="Rform1">
+            <label for="info"
+              >3.CSS is an abbreviation of
+
+              <input name="answer" id="answer" placeholder="" /> style sheet
+            </label>
+          </div>
+
+          <div class="Rform1">
+            <label
+              >4.Select all the (scripting) languages we learn in CSIS
+              1280?</label
+            ><br />
+
+            <div>
+              <input type="checkbox" name="answer" id="ans1" value="html" />
+              <label for="html">HTML</label>
+
+              <input name="answer" id="ans2" value="css" type="checkbox" />
+              <label for="css">CSS</label>
+
+              <input name="answer" id="ans3" value="jvsript" type="checkbox" />
+              <label for="jscrpt">JavaScript</label>
+
+              <input name="answer" id="ans4" value="php" type="checkbox" />
+              <label for="php">PHP</label>
+
+              <input name="answer" id="ans5" value="c#" type="checkbox" />
+              <label for="c#">C#</label>
+
+              <input name="answer" id="ans6" value="java" type="checkbox" />
+              <label for="java">JAVA</label>
+            </div>
+          </div>
+          <div class="Rform1">
+            <label
+              >5.Consider the picture of a DOM structure below. Which of the
+              following selector <b>CANNOT</b> be used to select all the &lt; p
+              &gt; elements ?</label
+            ><br />
+            <div class="sidebyside">
+              <div>
+                <input name="answer" id="ans1" value="p" type="radio" />
+                <label for="p">p</label><br />
+                <input name="answer" id="ans2" value="hl~p" type="radio" />
+                <label for="hl~p">hl ~ p</label><br />
+                <input name="answer" id="ans3" value="article" type="radio" />
+                <label for="art">article p</label><br />
+                <input name="answer" id="ans4" value="articlep" type="radio" />
+                <label for="arti">article > p</label><br />
+                <input name="answer" id="ans5" value="h1" type="radio" />
+                <label for="h">h1 + p</label><br />
+              </div>
+              <div>
+                <img src="images/images/q5.PNG" class="" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="Rform1">
+            <label
+              >6.Consider the picture of a DOM structure below. Which of the
+              following selector <b>CAN</b> be used to select all the identifier
+              &lt; li &gt; elements ?</label
+            ><br />
+            <div class="sidebyside">
+              <div>
+                <input name="answer" id="ans1" value="li" type="radio" />
+                <label for="li">li</label><br />
+                <input name="answer" id="ans2" value="linth2" type="radio" />
+                <label for="linth">li:nth-child(2n+1)</label><br />
+                <input name="answer" id="ans3" value="2n1" type="radio" />
+                <label for="2n1">ul > li:(2n+1)</label><br />
+                <input name="answer" id="ans4" value="uli" type="radio" />
+                <label for="uli">ul > li</label><br />
+                <input name="answer" id="ans5" value="u2" type="radio" />
+                <label for="u2">ul > li(2n+1)</label><br />
+              </div>
+              <div>
+                <img src="images/images/q6.PNG" class="" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="Rform1">
+            <label
+              >7. Douglas college and the Coquitlam campus was named after the
+              former governor and Liutenant-Governor of British Columbia. What
+              are their names?</label
+            >
+
+            <textarea
+              name="answer7"
+              id="commBox"
+              rows="4"
+              cols="50"
+              maxlength="50"
+            ></textarea>
+          </div>
+        </fieldset>
+
+        <div id="button">
+          <input type="submit" value="Submit My Quiz" />
+          <input type="reset" onclick="" value="Cancel" />
+        </div>
+      </form>
+    </section>
+    <footer></footer>
+  </body>
+</html>

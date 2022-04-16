@@ -1,0 +1,109 @@
+body {
+  background-color: #e9e7e6;
+  /* min-height: 100%;
+  min-width: 320px;*/
+  width: 90%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  display: flex;
+}
+section p {
+  font-weight: bold;
+  font-size: 15px;
+  color: red;
+}
+.Rform1 p {
+  color: null;
+}
+.Rform1 {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+form#quiz {
+  display: flex;
+}
+.sidebyside {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Legend Information */
+legend {
+  background-color: #646e78;
+  color: rgb(241, 239, 239);
+  padding: 5px;
+}
+
+fieldset#personalInfo {
+  background-color: white;
+  font-size: 0.85em;
+  padding: 10px;
+  margin: 10px;
+}
+fieldset#quest {
+  background-color: white;
+  font-size: 0.85em;
+  padding: 10px;
+  margin: 10px;
+}
+div.Rform {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 7px 0px;
+  justify-content: space-between;
+}
+.Rform1 img {
+  display: flex;
+  padding-left: 20%;
+  width: 200px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  display: block;
+  width: 100%;
+}
+div.Rform1 > select#acronym {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 7px 0px;
+  justify-content: space-between;
+}
+div.Rform > * {
+  flex: 1 1 150px;
+}
+.Rform1 textarea {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 10px;
+  height: 100px;
+  width: 10%;
+}
+
+#button input {
+  background-color: #e7e7e7;
+  border-radius: 20px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  font-size: 1.2em;
+  padding: 5px;
+  margin: 15px;
+}
+input#fulname:focus:valid,
+input#mail:focus:valid {
+  background: rgb(220, 255, 220) url(images/rb_valid.png) bottom right/contain
+    no-repeat;
+}
+
+input#fulname:focus:invalid,
+input#mail:focus:invalid {
+  background: rgb(255, 232, 233) url(images/rb_invalid.png) bottom right/contain
+    no-repeat;
+}
